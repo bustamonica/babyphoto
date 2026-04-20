@@ -4,6 +4,10 @@ Generate baby photos and short videos from two parent photos. Scaffold for the b
 
 This repo is currently at **Phase 0** — production skeleton only. No upload pipeline, no generation, no payments, no video.
 
+## Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbustamonica%2Fbabyphoto&env=DATABASE_URL,NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY,CLERK_WEBHOOK_SECRET&envDescription=Phase%200%20requires%20a%20Neon%20DATABASE_URL%20and%20three%20Clerk%20keys.%20Use%20any%20non-empty%20placeholder%20for%20CLERK_WEBHOOK_SECRET%20until%20Phase%201.&project-name=babyphoto&repository-name=babyphoto)
+
 ## Stack
 
 - Next.js 15 (App Router) + TypeScript
