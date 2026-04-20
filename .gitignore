@@ -21,3 +21,5 @@ next-env.d.ts
 tsconfig.tsbuildinfo
 
 .drizzle/
+
+.claude/settings.local.json
