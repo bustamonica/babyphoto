@@ -57,9 +57,9 @@ These must be done outside the repo before the app fully works:
 ## Verification (Phase 0 done-when)
 
 1. `pnpm typecheck && pnpm build` passes locally and in CI.
-2. With real credentials: `pnpm dev` → landing page has no sign-in button, only "Try it free".
-3. Click "Try it free" → implicit signup via Clerk → lands on `/generate` showing `1 credit`.
-4. Close browser, reopen, click "Try it free" again → goes straight to `/generate` via cookie (no sign-in prompt).
+2. With real credentials: `pnpm dev` → visit `/` → signed-out users are redirected to Clerk sign-up; signed-in users see the app directly.
+3. Complete sign-up → land back on `/` showing `1 credit`.
+4. Close browser, reopen, visit `/` → session cookie auto-resumes, no sign-in prompt.
 5. `curl localhost:3000/api/health` returns `{ ok: true, db: true }`.
 
 ## Next phases
